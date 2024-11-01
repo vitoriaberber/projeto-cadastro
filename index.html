@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pet</title>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media-query.css">
+</head>
+<body>
+    <main class="principal">
+        <section class="principal__sessao imagem">
+          <img class="sessao__imagem" src="assets/cachorro1.png" alt="">
+        </section>
+        <section class="principal__sessao formulario">
+            <form action="#" method="get" class="sessao__cadastro">
+                <h1 class="cadastro__titulo">Cadastre Seu Pet</h1>
+                <fieldset class="cadastro__campo">
+                    <div class="campo__tipo">
+                        <legend>Tipo ou Espécie</legend>
+                        <label for="cao" class="campo__label">Cachorro</label> <input type="radio" name="tipo" id="cao" value="cao"> 
+                        <label for="gato" class="campo__label">Gato</label> <input type="radio" name="tipo" id="gato" value="gato"> 
+                        <label for="aquatico" class="campo__label">Aquático</label> <input type="radio" name="tipo" id="aquatico" value="aquatico">
+                        <label for="ave" class="campo__label">Ave</label> <input type="radio" name="tipo" id="ave" value="ave">
+                        <label for="ioutros" class="campo__label">Outros</label>
+                        <input class="tipo__outros" type="text" name="outros" id="ioutros" placeholder="Outros">
+                    </div>
+
+                    <div>
+                        <label for="iraca" required class="campo__label">Raça</label>
+                        <input type="text" name="raca" id="iraca" placeholder="Raça" required>
+                    </div>
+
+                    <div>
+                        <legend>Castrado</legend>
+                        <input type="radio" name="castracao" id="sim" value="S" checked> <label class="campo__label" for="sim" required>Sim</label>
+                        <input type="radio" name="castracao" id="nao" value="N"> <label class="campo__label" for="nao">Não</label>
+                    </div>
+
+                    <div>
+                        <legend>Gênero</legend>
+                        <input type="radio" name="sexo" id="sxf" value="F" checked> <label class="campo__label" for="sxf">Fêmea</label>
+                        <input type="radio" name="sexo" id="sxm" value="M"> <label class="campo__label" for="sxm">Macho</label>
+                    </div>
+
+                    <div>
+                        <label class="campo__label" for="icor">Cor</label>
+                        <input type="text" name="cor" id="icor" required placeholder="Cor">
+                    </div>
+
+                    <div>
+                        <label class="campo__label" for="inome">Nome do Pet</label>
+                        <input type="text" name="nome" id="inome" class="nome" required placeholder="Nome do Pet">
+                    </div>
+                </fieldset>
+
+                <fieldset class="cadastro__campo">
+                    <div>
+                        <label class="campo__label" for="inomeTutor">Nome do Tutor: </label>
+                        <input type="text" name="nomeTutor" id="inomeTutor" class="nome" required placeholder="Nome do Tutor">
+                    </div>
+                    
+                    <div>
+                        <label class="campo__label" for="iemail">Email</label>
+                        <input type="email" name="email" id="iemail" required placeholder="XXX@XXXXX.XXXX">
+                    </div>
+
+                    <div>
+                        <label class="campo__label" for="icep">CEP</label>
+                        <input type="number" name="cep" id="icep" required placeholder="XXXXX-XXX">
+                    </div>
+
+                    <div>
+                        <label class="campo__label" for="icel">Celular</label>
+                        <input type="number" name="cel" id="icel" required placeholder="(XX) XXXXX-XXXX">
+                    </div>
+
+                    <div>
+                        <label  class="campo__label"for="itermo">Termo de Consentimento dos dados aqui inseridos: </label>
+                        <input type="checkbox" name="termo" id="itermo" required>
+                    </div>
+                </fieldset>
+
+                <input type="submit" value="Enviar" class="cadastro__botao">
+                <input type="reset" value="Limpar" class="cadastro__botao">
+            </form>
+        </section>
+    </main>
+</body>
+</html>

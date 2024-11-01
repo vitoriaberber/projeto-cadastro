@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+:root {
+    --cor-branco: #FFFFFF;
+    --cor-preto: #000000;
+    --cor-marrom-escuro: #5F2C17;
+    --cor-marrom-claro: #e0aa62;
+    --cor-marrom: #95471D;
+
+    --fonte: Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: var(--fonte);
+    background-color: var(--cor-marrom-claro);
+    position: relative;
+}
+
+.principal {
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--cor-branco);
+    padding: 1.5rem;
+    width: 80%;
+    height: 80vh;
+    box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.281);
+    transition: all 1s;
+    transition-timing-function: ease;
+}
+
+.imagem {
+    display: none;
+}
+
+.formulario {
+    font-size: 1.1rem;
+    overflow: scroll;
+}
+
+.cadastro__titulo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-bottom: 1.5rem;
+}
+
+.cadastro__campo {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+legend, input{
+    margin-bottom: 1rem;
+}
+
+.campo__tipo > input {
+    margin-right: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.tipo__outros {
+    margin-top: .5rem;
+}
+
+input {
+    padding: .2rem 0 .2rem 0;
+}
+
+input::placeholder {
+    font-family: var(--fonte);
+    color:var(--cor-marrom);
+    font-size: 1rem;
+}
+
+.cadastro__botao {
+    background-color: var(--cor-marrom-claro);
+    border: 1px solid var(--cor-marrom-escuro);
+    padding: .4rem;
+    margin-right: .5rem;
+}
+
+.cadastro__botao:hover {
+    cursor: pointer;
+    color: var(--cor-branco);
+    background-color: var(--cor-marrom-escuro);
+}
+
+.campo__label {
+    margin-right: .5rem;
+}
+
+.nome {
+    margin-top: .5rem;
+}
